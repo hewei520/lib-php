@@ -1,0 +1,9 @@
+{
+  "name":"xngk/lib-php",
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
