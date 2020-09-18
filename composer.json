@@ -1,5 +1,5 @@
 {
-    "name": "xn/lib-php",
+    "name": "hw/lib-php",
     "description": "公共类库",
     "type": "library",
     "require": {
@@ -17,8 +17,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "xn\\log\\": "log",
-            "xn\\output\\": "src"
+            "hw\\log\\": "log",
+            "hw\\output\\": "src"
         }
     }
 }

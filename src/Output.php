@@ -1,7 +1,7 @@
 <?php
 
 
-namespace xn\output;
+namespace hw\output;
 
 
 /**

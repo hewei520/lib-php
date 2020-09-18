@@ -1,6 +1,6 @@
 <?php
 
-namespace xn\output;
+namespace hw\output;
 
 /**
  * 状态码与映射

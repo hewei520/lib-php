@@ -1,7 +1,7 @@
 <?php
 
 
-namespace xn\log;
+namespace hw\log;
 
 use think\facade\Log as thinkLog;
 
