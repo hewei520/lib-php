@@ -21,7 +21,7 @@ class Output
      * @param $data
      * @returns string
      */
-    protected function result($code = StatusCode::SUCCESS, $data = "", $message = ""){
+    public static function result($code = StatusCode::SUCCESS, $data = "", $message = ""){
         if(empty($message)){
             $message = StatusCode::mapping($code);
         }
@@ -40,8 +40,8 @@ class Output
      * @param $data
      * @returns string
      */
-    protected function success($data = ""){
-        return $this->result(StatusCode::SUCCESS, StatusCode::mapping(StatusCode::SUCCESS), $data);
+    public static function success($data = ""){
+        return self::result(StatusCode::SUCCESS, StatusCode::mapping(StatusCode::SUCCESS), $data);
     }
 
     /**
@@ -52,7 +52,7 @@ class Output
      * @param $data
      * @returns string
      */
-    protected function error($code = StatusCode::ERROR, $data = "", $message = ""){
-        return $this->result($code, $message, $data);
+    public static function error($code = StatusCode::ERROR, $data = "", $message = ""){
+        return self::result($code, $message, $data);
     }
 }
