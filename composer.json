@@ -1,9 +1,17 @@
 {
-  "name":"xngk/lib-php",
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.phpcomposer.com"
+  "name": "lib-php",
+  "type": "php",
+  "authors": [
+    {
+      "name": "hewei",
+      "email": "824056342@qq.com"
+    }
+  ],
+  "require": {},
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "log\\": "log"
     }
   }
 }
