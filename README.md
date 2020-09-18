@@ -8,7 +8,7 @@ The public library for xiniao
 
 #### 2.安装方法
 ```
-composer require xn/lib-php:{version}
+composer require hw/lib-php:{version}
 
 说明：{version}指定的版本号
 ```
@@ -27,20 +27,30 @@ lib-php  跟目录
 ├─README.md             README 文件
 ```
 
-### 三、SDK
+### 三、使用方法
 
-#### 1.调用方法
+#### 1.日志调用方法
 
 ```
 日志静态调用方法有：info、debug、error、warning、sql、log
 
-Log::info($message, $context)
-Log::debug($message, $context)
-Log::error($message, $context)
-Log::warning($message, $context)
-Log::sql($message, $context)
-Log::log($level, $message, $context)
+\hw\log\Log::info($message, $context)
+\hw\log\Log::debug($message, $context)
+\hw\log\Log::error($message, $context)
+\hw\log\Log::warning($message, $context)
+\hw\log\Log::sql($message, $context)
+\hw\log\Log::log($level, $message, $context)
 
-说明：$message日志消息 $context
+说明：$message描述信息 $context内容 $level日志等级
 
+```
+#### 2.输出接口调用方法
+```
+输出类静态调用方法
+
+\hw\output\Output::result($code, $data, $message)
+\hw\output\Output::success($data)
+\hw\output\Output::error($code, $data, $message)
+
+说明：$code状态码 $data数据 $message状态信息
 ```
