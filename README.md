@@ -8,7 +8,9 @@ The public library for xiniao
 
 #### 2.安装方法
 ```
-composer require xn/lib-php:{branch}
+composer require xn/lib-php:{version}
+
+说明：{version}指定的版本号
 ```
 ### 二、目录结构
 
@@ -27,8 +29,18 @@ lib-php  跟目录
 
 ### 三、SDK
 
-#### 1.日志
+#### 1.调用方法
 
 ```
+日志静态调用方法有：info、debug、error、warning、sql、log
+
+Log::info($message, $context)
+Log::debug($message, $context)
+Log::error($message, $context)
+Log::warning($message, $context)
+Log::sql($message, $context)
+Log::log($level, $message, $context)
+
+说明：$message日志消息 $context
 
 ```
