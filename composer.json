@@ -1,17 +1,23 @@
 {
-  "name": "xn/lib-php",
-  "type": "php",
-  "authors": [
-    {
-      "name": "hewei",
-      "email": "824056342@qq.com"
+    "name": "xn/lib-php",
+    "description": "公共类库",
+    "type": "library",
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "php": ">=7.2"
+    },
+    "authors": [
+        {
+            "name": "hewei",
+            "email": "824056342@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "xn\\log\\": "log"
+        }
     }
-  ],
-  "require": {},
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "log\\": "log"
-    }
-  }
 }
