@@ -17,7 +17,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "xn\\log\\": "log"
+            "xn\\log\\": "log",
+            "xn\\output\\": "src"
         }
     }
 }
