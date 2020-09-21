@@ -19,7 +19,8 @@
     "autoload": {
         "psr-4": {
             "hw\\log\\": "log",
-            "hw\\output\\": "src"
+            "hw\\output\\": "src",
+            "hw\\": "lib-php"
         }
     }
 
