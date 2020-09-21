@@ -8,7 +8,7 @@ namespace hw\output;
  * @file Output
  * @synopsis 输出标准类
  * @author hewei(hewei@xiniaogongkao.com)
- * @version 1.0.0
+ * @version 1.0.1
  * @date 2020/9/18
  */
 class Output
@@ -41,7 +41,7 @@ class Output
      * @returns string
      */
     public static function success($data = ""){
-        return self::result(StatusCode::SUCCESS, StatusCode::mapping(StatusCode::SUCCESS), $data);
+        return self::result(StatusCode::SUCCESS, $data);
     }
 
     /**
@@ -53,6 +53,6 @@ class Output
      * @returns string
      */
     public static function error($code = StatusCode::ERROR, $data = "", $message = ""){
-        return self::result($code, $message, $data);
+        return self::result($code, $data, $message);
     }
 }
